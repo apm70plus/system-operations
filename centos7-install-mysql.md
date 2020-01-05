@@ -164,8 +164,9 @@ innodb_lock_wait_timeout = 120                  # InnoDB事务在被回滚之前
 innodb_log_file_size = 32M                      # 此参数确定数据日志文件的大小，更大的设置可以提高性能，但也会增加恢复故障数据库所需的时间
 ```
 
-2. 安装过程错误总结
-在安装过程中出现./mysqld: error while loading shared libraries: libaio.so.1: cannot open shared object file: No such file or directory错误时，请切回root用户，执行以下命令即可：
+2. 安装过程错误总结  
+
+- 在安装过程中出现./mysqld: error while loading shared libraries: libaio.so.1: cannot open shared object file: No such file or directory错误时，请切回root用户，执行以下命令即可：
 ```
 yum install libaio
 ```
